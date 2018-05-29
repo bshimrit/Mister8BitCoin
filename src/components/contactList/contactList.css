@@ -1,0 +1,25 @@
+
+.contact-list img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.contact-list .contact-info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.contact-list li {
+    margin-top: 25px;
+    padding: 10px;
+    box-shadow: 0 -3px #fff, 0 -6px #000, 3px 0 #fff, 3px -3px #000, 6px 0 #000, 0 3px #fff, 0 6px #000, -3px 0 #fff, -3px 3px #000, -6px 0 #000, -3px -3px #000, 3px 3px #000;
+}
+
+.contact-list li:hover {
+    padding: 10px;
+    box-shadow: 0 -3px #fff, 0 -6px #000, 3px 0 #fff, 3px -3px #000, 6px 0 #000, 0 3px #fff, 0 6px #000, -3px 0 #fff, -3px 3px #000, -6px 0 #000, -3px -3px #000, 3px 3px #000, 3px 9px #aaa, 6px 6px #aaa, 9px 3px #aaa;
+}
