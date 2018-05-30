@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ContactList from '../components/contactList/ContactList.js'
-import ContactFilter from '../components/contactFilter/ContactFilter.js'
-import ContactService from '../services/ContactService.js';
+import ContactList from '../../components/contactList/ContactList.js'
+import ContactFilter from '../../components/contactFilter/ContactFilter.js'
+import ContactService from '../../services/ContactService.js';
 
 
 class Contacts extends Component {
@@ -22,9 +22,10 @@ class Contacts extends Component {
   
   render() {
     return (
-      <div className="container Contacts">
+      <div className="container contacts">
         <ContactFilter searchEvent={this.searchEvent}></ContactFilter>
         <ContactList contacts={this.state.contacts}></ContactList>
+        <button><img src="/img/icons/button.png" /></button>
       </div>
     );
   }

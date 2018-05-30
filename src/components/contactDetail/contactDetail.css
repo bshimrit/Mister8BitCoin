@@ -1,0 +1,21 @@
+.contact-detail img{
+    width: 150px;
+    height: 150px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 -3px #fff, 0 -6px #000, 3px 0 #fff, 3px -3px #000, 6px 0 #000, 0 3px #fff, 0 6px #000, -3px 0 #fff, -3px 3px #000, -6px 0 #000, -3px -3px #000, 3px 3px #000, 3px 9px #aaa, 6px 6px #aaa, 9px 3px #aaa;
+}
+
+.contact-detail section {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.contact-detail section div {
+    font-size: 25px;
+    padding: 10px;
+    margin: 0;
+}

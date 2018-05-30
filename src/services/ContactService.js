@@ -154,7 +154,6 @@ function getContacts (filterBy = null) {
     var contactsToReturn = contacts;
     if (filterBy) {
       const {term} = filterBy;
-      console.log(term)
       contactsToReturn = contacts.filter( contact => {
         return contact.name.toLocaleLowerCase().includes(term) ||
                contact.phone.toLocaleLowerCase().includes(term) ||

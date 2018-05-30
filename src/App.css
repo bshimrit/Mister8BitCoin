@@ -11,6 +11,9 @@ body {
 input {
     font-family: mainFont;
     padding: 0px 0px 10px 10px;
+    box-shadow: 0 -3px #fff, 0 -6px #000, 3px 0 #fff, 3px -3px #000, 6px 0 #000, 0 3px #fff, 0 6px #000, -3px 0 #fff, -3px 3px #000, -6px 0 #000, -3px -3px #000, 3px 3px #000, 3px 9px #aaa, 6px 6px #aaa, 9px 3px #aaa;
+    font-size: 30px;
+    padding-top: 10px;
 }
 
 input:focus {
@@ -41,26 +44,11 @@ ul{
   height: 80px;
 }
 
-.App-header {
-  background-color: #000;
-  height: 150px;
-  padding-bottom: 20px;
-  color: white;
-  display: flex;
-  align-items: center;
+a:visited {
+  color: #ffffff;
 }
-
-.App-header h1 {
-  font-size: 40px;
-  width: 80%;
-} 
-
-
-.App-header img {
-  position: relative;
-  height: 100%;
-  border-radius: 50%;
-  float: left;
+a {
+  color: #ffffff;
 }
 
 .App-title {
@@ -69,6 +57,19 @@ ul{
 
 .App-intro {
   font-size: large;
+}
+
+.contacts button {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  border: none;
+  color: transparent;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-shadow: 0;
+  background-color: transparent;
 }
 
 @keyframes App-logo-spin {
