@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
 import './contactPreview.css'
 
-class ContactPreview extends Component {
-
-    render() {
+const ContactPreview = ({contact}) => {
         return (
         <div className="contact-preview">
-            <img src={this.props.contact.picture} />
+            <img src={contact.picture} />
             <div className="contact-info">
-                <div>{this.props.contact.name}</div>
-                <div>{this.props.contact.phone}</div>
+                <div>{contact.name}</div>
+                <div>{contact.phone}</div>
             </div>
         </div>
         );
     }
-}
 
 export default ContactPreview;

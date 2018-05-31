@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
+import { connect } from 'react-redux';
+
+import { loadContact } from '../../store/contacts/contactsActions';
+
+import './contactDetails.css'
+
 import ContactService from '../../services/ContactService.js';
 import ContactDetail from '../../components/contactDetail/ContactDetail.js';
-import { Link } from 'react-router-dom'
-import './contactDetails.css'
-class ContactDetails extends Component {
-  constructor() {
-    super();
 
-    this.state = {
-      contact: {}
-    }
-  }
+
+class ContactDetails extends Component {
 
   componentDidMount() {
-    ContactService.getContactById(this.props.match.params.id)
-      .then(contact => {
-          this.setState({contact: contact});
-      })
+    this.props.dispatch(getContact(this.props.match.params.id));
   }
   
   render() {
+
+    if (!this.props.contact) return <div>Loading...</div>
+
     var editUrl = '/contact/edit/' + this.props.match.params.id
     return (
       <div className="container contact-details">
@@ -28,11 +28,23 @@ class ContactDetails extends Component {
           <Link to={editUrl}>Edit</Link>
         </div>
         <section>
-            <ContactDetail contact={this.state.contact}></ContactDetail>
+            <ContactDetail contact={this.props.contact}></ContactDetail>
         </section>
       </div>
     );
   }
 }
 
-export default ContactDetails;
+const mapStateToProps = (state) => {
+  return {
+      contact: state.contactsReducers.selectedContact,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+      dispatch,
+  };
+};
+
+export default connect(mapStateToProps,mapDispatchToProps)(ContactDetails);

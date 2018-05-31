@@ -1,5 +1,5 @@
 import React, {component} from 'react'
-import { BrowserRouter, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './header.css'
 
 const Header = () => {

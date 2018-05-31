@@ -59,7 +59,7 @@ a {
   font-size: large;
 }
 
-.contacts button {
+.contacts .add-btn {
   position: fixed;
   right: 15px;
   bottom: 15px;
