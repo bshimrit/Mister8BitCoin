@@ -13,7 +13,7 @@ import ContactDetail from '../../components/contactDetail/ContactDetail.js';
 class ContactDetails extends Component {
 
   componentDidMount() {
-    this.props.dispatch(getContact(this.props.match.params.id));
+    this.props.dispatch(loadContact(this.props.match.params.id));
   }
   
   render() {
