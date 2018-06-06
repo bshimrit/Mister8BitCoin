@@ -23,13 +23,13 @@ class Home extends Component {
         return (
           <div className="container home">
             <div className="user-info">
-              <img src="/img/icons/box.jpg" />
+              <img src="img/icons/box.jpg" />
               <div>
                 <h1>Hello {loggedInUser.userName}</h1>
                 <div className="balance flex align-center coin">
                   Your Balance: 
                   <div className="flex align-center">
-                    {loggedInUser.bitCoins} <img src="/img/icons/bitcoin.png"/></div>
+                    {loggedInUser.bitCoins} <img src="img/icons/bitcoin.png"/></div>
                   </div>
               </div>
             </div>
