@@ -10,19 +10,19 @@ const Header = () => {
             <div className="nav-bar">
                 <NavLink exact to={process.env.PUBLIC_URL + "/"}>
                     <div>
-                        <img src="img/icons/home.jpg" />
+                        <img src={process.env.PUBLIC_URL +"/img/icons/home.jpg"} />
                         <div> HOME </div>
                     </div>
                 </NavLink>
                 <NavLink exact to={process.env.PUBLIC_URL + "/contacts"}>
                     <div>
-                        <img src="img/icons/users.jpg" />
+                        <img src={process.env.PUBLIC_URL + "img/icons/users.jpg"} />
                         <div> CONTACTS </div>
                     </div>
                 </NavLink>
                 <NavLink exact to={process.env.PUBLIC_URL + "/moves"}>
                     <div>
-                        <img src="img/icons/ledger.jpg" />
+                        <img src={process.env.PUBLIC_URL + "img/icons/ledger.jpg"} />
                         <div> LEDGER </div>
                     </div>
                 </NavLink>
