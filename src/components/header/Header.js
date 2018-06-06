@@ -16,13 +16,13 @@ const Header = () => {
                 </NavLink>
                 <NavLink exact to={process.env.PUBLIC_URL + "/contacts"}>
                     <div>
-                        <img src={process.env.PUBLIC_URL + "img/icons/users.jpg"} />
+                        <img src={process.env.PUBLIC_URL + "/img/icons/users.jpg"} />
                         <div> CONTACTS </div>
                     </div>
                 </NavLink>
                 <NavLink exact to={process.env.PUBLIC_URL + "/moves"}>
                     <div>
-                        <img src={process.env.PUBLIC_URL + "img/icons/ledger.jpg"} />
+                        <img src={process.env.PUBLIC_URL + "/img/icons/ledger.jpg"} />
                         <div> LEDGER </div>
                     </div>
                 </NavLink>
