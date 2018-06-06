@@ -10,19 +10,19 @@ const Header = () => {
             <div className="nav-bar">
                 <NavLink exact to="/">
                     <div>
-                        <img src="/img/icons/home.jpg" />
+                        <img src="./img/icons/home.jpg" />
                         <div> HOME </div>
                     </div>
                 </NavLink>
                 <NavLink exact to="/contacts">
                     <div>
-                        <img src="/img/icons/users.jpg" />
+                        <img src="./img/icons/users.jpg" />
                         <div> CONTACTS </div>
                     </div>
                 </NavLink>
                 <NavLink exact to="/moves">
                     <div>
-                        <img src="/img/icons/ledger.jpg" />
+                        <img src="./img/icons/ledger.jpg" />
                         <div> LEDGER </div>
                     </div>
                 </NavLink>

@@ -27,7 +27,7 @@ class Contacts extends Component {
       <div className="container contacts">
         <ContactFilter searchEvent={this.searchEvent}></ContactFilter>
         <ContactList contacts={this.props.contacts}></ContactList>
-        <Link className="add-btn" to="/contact/edit" ><img src="/img/icons/button.png" /></Link>
+        <Link className="add-btn" to="/contact/edit" ><img src="./img/icons/button.png" /></Link>
       </div>
     );
   }
