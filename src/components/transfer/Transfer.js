@@ -41,7 +41,7 @@ class Transfer extends Component {
     if (this.state.onTransfer) {
         return (
             <div className="container transfer">
-                <img className="margin-top20" src="./img/icons/transfer.gif" />
+                <img className="margin-top20" src="img/icons/transfer.gif" />
             </div>)
     } else {
         return (
