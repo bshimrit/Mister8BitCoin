@@ -8,13 +8,13 @@ const Header = () => {
             <img className="logo" src="img/logo.png" />
             <h1>Mister 8BitCoin</h1>
             <div className="nav-bar">
-                <NavLink exact to={process.env.PUBLIC_URL + "/"}>
+                <NavLink exact to={"%PUBLIC_URL%/"}>
                     <div>
                         <img src="img/icons/home.jpg" />
                         <div> HOME </div>
                     </div>
                 </NavLink>
-                <NavLink exact to={process.env.PUBLIC_URL + "/contacts"}>
+                <NavLink exact to={"%PUBLIC_URL%/contacts"}>
                     <div>
                         <img src="img/icons/users.jpg" />
                         <div> CONTACTS </div>
