@@ -38,7 +38,7 @@ class Home extends Component {
                 <h1>Current Rates</h1>
                 <div className="coin"> <img src="img/icons/dollar.png"/> USD: {this.state.bitCoinRate.USD} </div>
                 <div className="coin"> <img src="img/icons/euro.png"/> EUR: {this.state.bitCoinRate.EUR} </div>
-                <div className="coin"> <img src="img/icons/yen.png"/> CNY: {this.state.bitCoinRate.CNY} </div>
+                <div className="coin"> <img src="img/icons/Yen.png"/> CNY: {this.state.bitCoinRate.CNY} </div>
               </div>
             </section>
           </div>
