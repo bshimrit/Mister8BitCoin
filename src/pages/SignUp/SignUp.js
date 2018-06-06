@@ -28,7 +28,7 @@ class Signup extends Component {
             <div>Please enter your name:</div>
             <div className="margin-top20">
                 <Input id="user" onInput={this.updateInput} type="text"/>
-                <input type="submit" />
+                <input type="submit" value="SUBMIT"/>
             </div>
           </form>
         )
