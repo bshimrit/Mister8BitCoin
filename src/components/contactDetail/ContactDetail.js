@@ -5,7 +5,7 @@ import './contactDetail.css'
 const ContactDetail = ({contact}) => {
       return (
         <div className="contact-detail">
-          <img src={contact.picture} />
+          <img src={'../' + contact.picture} />
           <section>
               <div>{contact.name}</div>
               <div>Phone: {contact.phone}</div>
