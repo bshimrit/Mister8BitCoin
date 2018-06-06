@@ -1,3 +1,13 @@
 .move-list li {
     margin: 0 auto;
 }
+
+.move-list h1 {
+    font-size: 1.2em;
+}
+
+@media (min-width: 750px){
+    .move-list h1 {
+        font-size: 1.5em;
+    }
+}

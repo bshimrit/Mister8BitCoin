@@ -16,9 +16,9 @@ class MoveList extends Component {
     render() {
         if (this.props.moves) {
             return (
-            <div className="container">
+            <div className="move-list container">
                 <h1>Transfer history</h1>
-                <ul className="move-list flex flex-wrap">{this.props.moves.map(move => {
+                <ul className="flex flex-wrap">{this.props.moves.map(move => {
                 return (<li key={move.at} ><MovePreview move={move}></MovePreview></li>)
             })}</ul>
             </div>

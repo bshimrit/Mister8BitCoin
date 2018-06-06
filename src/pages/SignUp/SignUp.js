@@ -25,10 +25,12 @@ class Signup extends Component {
     render(){
         return (
             <form onSubmit={this.handleSubmit}>
-            <div>Please enter your name:</div>
-            <div className="margin-top20">
-                <Input id="user" onInput={this.updateInput} type="text"/>
-                <input type="submit" value="SUBMIT"/>
+            <div>Please Signup:</div>
+            <div className="margin-top20 flex flex-column align-center">
+                <Input id="user" onInput={this.updateInput} type="text" placeHolder="Your name"/>
+                <div className="margin-top20">
+                    <input type="submit" value="SUBMIT"/>
+                </div>
             </div>
           </form>
         )

@@ -4,7 +4,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50vw;
+    width: 85vw;
+}
+
+.home .user-info img.box {
+    width: 100px;
+    height: 100px;
 }
 
 .home div {
@@ -16,8 +21,36 @@
     height: 30px;
 }
 
-.home .balance div {
+.home .balance {
     padding: 0;
     border: 0;
+    font-size: 0.7em;
+}
+
+.home .balance img {
+    margin-left: 5px;
+}
+
+.home .user-info h1 {
+    font-size: 1em;
+}
+
+@media (min-width: 750px){
+    .home .user-info {
+        width: 50vw;
+    }
+
+    .home .user-info img.box {
+        width: 225px;
+        height:225px;
+    }
+
+    .home .user-info h1 {
+        font-size: 1.5em;;
+    }
+
+    .home .balance {
+        font-size: 1em;
+    }
 }
 

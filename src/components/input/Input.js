@@ -8,7 +8,7 @@ const Input = (props) => {
     }
 
     return (
-        <input onInput={whenInput} value={props.value} type={props.type}/>
+        <input onInput={whenInput} value={props.value} type={props.type} placeholder={props.placeHolder}/>
     );
 }
 

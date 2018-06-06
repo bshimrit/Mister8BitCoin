@@ -1,6 +1,7 @@
 .transfer {
     margin: 0 auto;
 }
+
 .transfer button {
     box-shadow: 0 -3px #fff, 0 -6px #000, 3px 0 #fff, 3px -3px #000, 6px 0 #000, 0 3px #fff, 0 6px #000, -3px 0 #fff, -3px 3px #000, -6px 0 #000, -3px -3px #000, 3px 3px #000, 3px 9px #aaa, 6px 6px #aaa, 9px 3px #aaa;
     margin-left: 20px;
@@ -13,4 +14,12 @@
 .transfer button:hover {
     background-color: grey;
     color: #ffffff;
+}
+
+.transfer input {
+    width: 85vw;
+}
+
+@media (min-width: 750px){
+
 }

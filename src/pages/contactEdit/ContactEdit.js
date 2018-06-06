@@ -48,19 +48,20 @@ class ContactEdit extends Component {
   render() {
     return (
       <div className="container contact-edit">
+        <h1>{this.props.match.params.id ? 'Edit Contact' : 'Add Contact'}</h1>
         <form className="flex flex-column align-start" onSubmit={this.handleSubmit}>
           <div>
             <div className="flex align-center margin-top20">
               <div className="title" > Name: </div> 
-              <Input id="name" onInput={this.updateInput} value={this.state.contact.name} type="text" />
+              <Input id="name" onInput={this.updateInput} value={this.state.contact.name} type="text" placeHolder="Name"/>
             </div>
             <div className="flex align-center margin-top20">
               <div className="title"> Phone: </div> 
-              <Input id="phone" onInput={this.updateInput} value={this.state.contact.phone} type="phone" />
+              <Input id="phone" onInput={this.updateInput} value={this.state.contact.phone} type="phone" placeHolder="Phone" />
             </div>
             <div className="flex align-center margin-top20">
               <div className="title"> Email: </div> 
-              <Input id="email" onInput={this.updateInput} value={this.state.contact.email} type="email" />
+              <Input id="email" onInput={this.updateInput} value={this.state.contact.email} type="email" placeHolder="Email"/>
             </div>
             <div className="flex justify-end btn-panel flex">
               <button className="pointer" onClick={this.cancelSubmit}>CANCEL</button>

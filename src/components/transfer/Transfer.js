@@ -49,8 +49,8 @@ class Transfer extends Component {
             <form className="flex flex-column align-start margin-top20" onSubmit={this.handleSubmit}>
                 <h1 className="margin-top20">Transfer bitcoins?</h1>
                 <div className="flex flex-column align-end">
-                    <div> Amount: 
-                        <Input id="amount" onInput={this.updateInput} type="number" />
+                    <div>
+                        <Input id="amount" onInput={this.updateInput} type="number" placeHolder="Amount"/>
                     </div>
                     <button  type="submit">TRANSFER</button>
                 </div>
