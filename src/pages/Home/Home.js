@@ -23,22 +23,22 @@ class Home extends Component {
         return (
           <div className="container home">
             <div className="user-info">
-              <img src="img/icons/box.jpg" />
+              <img src="./img/icons/box.jpg" />
               <div>
                 <h1>Hello {loggedInUser.userName}</h1>
                 <div className="balance flex align-center coin">
                   Your Balance: 
                   <div className="flex align-center">
-                    {loggedInUser.bitCoins} <img src="img/icons/bitcoin.png"/></div>
+                    {loggedInUser.bitCoins} <img src="./img/icons/bitcoin.png"/></div>
                   </div>
               </div>
             </div>
             <section>
               <div className="flex flex-column align-start">
                 <h1>Current Rates</h1>
-                <div className="coin"> <img src="img/icons/dollar.png"/> USD: {this.state.bitCoinRate.USD} </div>
-                <div className="coin"> <img src="img/icons/euro.png"/> EUR: {this.state.bitCoinRate.EUR} </div>
-                <div className="coin"> <img src="img/icons/Yen.png"/> CNY: {this.state.bitCoinRate.CNY} </div>
+                <div className="coin"> <img src="./img/icons/dollar.png"/> USD: {this.state.bitCoinRate.USD} </div>
+                <div className="coin"> <img src="./img/icons/euro.png"/> EUR: {this.state.bitCoinRate.EUR} </div>
+                <div className="coin"> <img src="./img/icons/Yen.png"/> CNY: {this.state.bitCoinRate.CNY} </div>
               </div>
             </section>
           </div>
