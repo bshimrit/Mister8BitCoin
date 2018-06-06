@@ -44,16 +44,16 @@ class App extends Component {
               <div>
                 <Header></Header>
                 <Switch>
-                <Route path={process.env.PUBLIC_URL + '/moves'} render={() => (
+                <Route exact path={process.env.PUBLIC_URL + '/moves'} render={() => (
                       !this.props.loggedInUser ? ( <Redirect to={process.env.PUBLIC_URL + "/signup"} />) : (<MoveList/>))}/>
-                  <Route path={process.env.PUBLIC_URL + '/contacts'} render={() => (
+                  <Route exact  path={process.env.PUBLIC_URL + '/contacts'} render={() => (
                       !this.props.loggedInUser ? ( <Redirect to={process.env.PUBLIC_URL + "/signup"} />) : (<Contacts/>))}/>/>
-                  <Route path={process.env.PUBLIC_URL + '/contact/edit/:id?'} render={(props) => (
+                  <Route exact path={process.env.PUBLIC_URL + '/contact/edit/:id?'} render={(props) => (
                       !this.props.loggedInUser ? ( <Redirect to={process.env.PUBLIC_URL + "/signup"} />) : (<ContactEdit{...props}/>))}/>/>
-                  <Route path={process.env.PUBLIC_URL + '/contact/:id'} render={(props) => (
+                  <Route exact path={process.env.PUBLIC_URL + '/contact/:id'} render={(props) => (
                       !this.props.loggedInUser ? ( <Redirect to={process.env.PUBLIC_URL + "/signup"} />) : (<ContactDetails{...props}/>))}/>/>
-                  <Route path={process.env.PUBLIC_URL + '/signup'} component={Signup} />
-                  <Route path={process.env.PUBLIC_URL + '/'} render={() => (
+                  <Route exact path={process.env.PUBLIC_URL + '/signup'} component={Signup} />
+                  <Route exact path={process.env.PUBLIC_URL + '/'} render={() => (
                       !this.props.loggedInUser ? ( <Redirect to={process.env.PUBLIC_URL + "/signup"} />) : (<Home loggedInUser={this.props.loggedInUser}/>))}/>
                 </Switch>
               </div>

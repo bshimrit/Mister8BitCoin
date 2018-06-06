@@ -9,7 +9,7 @@ class ContactList extends Component {
     renderContacts(){
         return this.props.contacts.map(contact => {
             let curUrl = '/contact/' + contact._id;
-            return (<li  key={contact._id} ><Link to={process.env.PUBLIC_URL + curUrl}><ContactPreview contact={contact}></ContactPreview></Link></li>)
+            return (<li  key={contact._id} ><Link exact to={process.env.PUBLIC_URL + curUrl}><ContactPreview contact={contact}></ContactPreview></Link></li>)
         })
     }
 
