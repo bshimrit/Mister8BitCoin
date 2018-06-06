@@ -16,10 +16,6 @@ class Contacts extends Component {
   }
 
   componentDidMount() {
-    // ContactService.getContacts()
-    //   .then(contacts => {
-    //       this.setState({contacts: contacts});
-    //   })
     this.props.dispatch(loadContacts({term: ''}));
   }
   
@@ -38,10 +34,6 @@ class Contacts extends Component {
 
   searchEvent(searchValue){
     this.props.dispatch(loadContacts(searchValue));
-    // ContactService.getContacts(searchValue)
-    //   .then(contacts => {
-    //       this.setState({contacts: contacts});
-    //   })
   }
 }
 

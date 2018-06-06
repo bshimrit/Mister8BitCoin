@@ -1,0 +1,23 @@
+.home .user-info {
+    box-shadow: 0 -3px #fff, 0 -6px #000, 3px 0 #fff, 3px -3px #000, 6px 0 #000, 0 3px #fff, 0 6px #000, -3px 0 #fff, -3px 3px #000, -6px 0 #000, -3px -3px #000, 3px 3px #000, 3px 9px #aaa, 6px 6px #aaa, 9px 3px #aaa;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+}
+
+.home div {
+    padding: 10px;
+}
+
+.home .coin img {
+    width: 30px;
+    height: 30px;
+}
+
+.home .balance div {
+    padding: 0;
+    border: 0;
+}
+

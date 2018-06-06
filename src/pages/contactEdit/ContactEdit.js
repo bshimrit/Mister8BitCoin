@@ -19,10 +19,16 @@ class ContactEdit extends Component {
     
     handleSubmit = e => {
         e.preventDefault();
+    }
 
-        this.props.saveContact(this.state.contact, ()=> {
-            this.props.history.push("/contacts");
-        })
+    saveSubmit = e => {
+      this.props.saveContact(this.state.contact, ()=> {
+        this.props.history.push("/contacts");
+      })
+    }
+
+    cancelSubmit = e => {
+      this.props.history.push("/contacts");
     }
 
   
@@ -42,35 +48,25 @@ class ContactEdit extends Component {
   render() {
     return (
       <div className="container contact-edit">
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            {" "}
-            Name:{" "}
-            <Input
-              id="name"
-              onInput={this.updateInput}
-              value={this.state.contact.name}
-            />
-          </label>
-          <label>
-            {" "}
-            Phone:{" "}
-            <Input
-              id="phone"
-              onInput={this.updateInput}
-              value={this.state.contact.phone}
-            />
-          </label>
-          <label>
-            {" "}
-            Email:{" "}
-            <Input
-              id="email"
-              onInput={this.updateInput}
-              value={this.state.contact.email}
-            />
-          </label>
-          <button type="submit">SAVE</button>
+        <form className="flex flex-column align-start" onSubmit={this.handleSubmit}>
+          <div>
+            <div className="flex align-center margin-top20">
+              <div className="title" > Name: </div> 
+              <Input id="name" onInput={this.updateInput} value={this.state.contact.name} />
+            </div>
+            <div className="flex align-center margin-top20">
+              <div className="title"> Phone: </div> 
+              <Input id="phone" onInput={this.updateInput} value={this.state.contact.phone} />
+            </div>
+            <div className="flex align-center margin-top20">
+              <div className="title"> Email: </div> 
+              <Input id="email" onInput={this.updateInput} value={this.state.contact.email} />
+            </div>
+            <div className="flex justify-end btn-panel flex">
+              <button className="pointer" onClick={this.cancelSubmit}>CANCEL</button>
+              <button className="pointer" onClick={this.saveSubmit}>SAVE</button>
+            </div>
+          </div>
         </form>
       </div>
     );

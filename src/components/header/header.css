@@ -15,14 +15,23 @@
   
   .App-header img.logo {
     position: relative;
-    height: 100%;
-    border-radius: 50%;
+    height: 100px;
+    width: 100px;
     float: left;
   }
 
   .nav-bar {
     display: flex;
     align-items: center;
+    font-size:10px;
+  }
+
+  .nav-bar a {
+    text-decoration: none;
+  }
+
+  .nav-bar a:hover {
+    color: #f7dc2c;
   }
 
   .nav-bar a:not(:last-child){
@@ -33,5 +42,8 @@
  .nav-bar img {
    width: 50px;
    height: 50px;
+   /* object-fit: cover; */
  }
+
+
   

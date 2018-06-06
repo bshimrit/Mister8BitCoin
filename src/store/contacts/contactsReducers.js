@@ -24,9 +24,3 @@ export function contactsReducers(state = initState, action) {
             return state;
     }
 }
-
-const initStateUpload = {
-    upload: {
-        success: false,
-    }
-}

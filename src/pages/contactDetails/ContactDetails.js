@@ -7,7 +7,9 @@ import { loadContact } from '../../store/contacts/contactsActions';
 import './contactDetails.css'
 
 import ContactService from '../../services/ContactService.js';
+
 import ContactDetail from '../../components/contactDetail/ContactDetail.js';
+import Transfer from '../../components/transfer/Transfer.js';
 
 
 class ContactDetails extends Component {
@@ -29,6 +31,7 @@ class ContactDetails extends Component {
         </div>
         <section>
             <ContactDetail contact={this.props.contact}></ContactDetail>
+            <Transfer contact={this.props.contact}></Transfer>
         </section>
       </div>
     );

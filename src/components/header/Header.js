@@ -8,8 +8,24 @@ const Header = () => {
             <img className="logo" src="/img/logo.png" />
             <h1>Mister 8BitCoin</h1>
             <div className="nav-bar">
-                <NavLink exact to="/"><img src="/img/icons/home.png" /></NavLink>
-                <NavLink exact to="/contacts">Contacts</NavLink>
+                <NavLink exact to="/">
+                    <div>
+                        <img src="/img/icons/home.jpg" />
+                        <div> HOME </div>
+                    </div>
+                </NavLink>
+                <NavLink exact to="/contacts">
+                    <div>
+                        <img src="/img/icons/users.jpg" />
+                        <div> CONTACTS </div>
+                    </div>
+                </NavLink>
+                <NavLink exact to="/moves">
+                    <div>
+                        <img src="/img/icons/ledger.jpg" />
+                        <div> LEDGER </div>
+                    </div>
+                </NavLink>
             </div>
         </header>   
     );

@@ -15,6 +15,7 @@ import Home from './pages/home/Home.js'
 import ContactEdit from './pages/contactEdit/ContactEdit.js'
 import Header from './components/header/Header.js'
 import Signup from './pages/signup/Signup.js'
+import MoveList from './pages/moveList/MoveList'
 
 class App extends Component {
   constructor() {
@@ -28,7 +29,6 @@ class App extends Component {
   }
   
   render() {
-    // console.log(this.props.loggedInUser)
       if (!this.props.loggedInUser && this.state.loading) {
         return (
           <div className="App">
@@ -44,15 +44,17 @@ class App extends Component {
               <div>
                 <Header></Header>
                 <Switch>
+                <Route path='/moves' render={() => (
+                      !this.props.loggedInUser ? ( <Redirect to="/signup"/>) : (<MoveList/>))}/>
                   <Route path='/contacts' render={() => (
                       !this.props.loggedInUser ? ( <Redirect to="/signup"/>) : (<Contacts/>))}/>/>
-                  <Route path='/contact/edit/:id?' render={() => (
-                      !this.props.loggedInUser ? ( <Redirect to="/signup"/>) : (<ContactEdit/>))}/>/>
-                  <Route path='/contact/:id' render={() => (
-                      !this.props.loggedInUser ? ( <Redirect to="/signup"/>) : (<ContactDetails/>))}/>/>
+                  <Route path='/contact/edit/:id?' render={(props) => (
+                      !this.props.loggedInUser ? ( <Redirect to="/signup"/>) : (<ContactEdit{...props}/>))}/>/>
+                  <Route path='/contact/:id' render={(props) => (
+                      !this.props.loggedInUser ? ( <Redirect to="/signup"/>) : (<ContactDetails{...props}/>))}/>/>
                   <Route path='/signup' component={Signup} />
                   <Route path='/' render={() => (
-                      !this.props.loggedInUser ? ( <Redirect to="/signup"/>) : (<Home/>))}/>
+                      !this.props.loggedInUser ? ( <Redirect to="/signup"/>) : (<Home loggedInUser={this.props.loggedInUser}/>))}/>
                 </Switch>
               </div>
             </BrowserRouter>
