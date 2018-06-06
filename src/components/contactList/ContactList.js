@@ -8,7 +8,7 @@ class ContactList extends Component {
 
     renderContacts(){
         return this.props.contacts.map(contact => {
-            let curUrl = "/contact/" + contact._id;
+            let curUrl = '%PUBLIC_URL%/contact/' + contact._id;
             return (<li  key={contact._id} ><Link to={curUrl}><ContactPreview contact={contact}></ContactPreview></Link></li>)
         })
     }

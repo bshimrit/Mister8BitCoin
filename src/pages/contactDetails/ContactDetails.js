@@ -22,11 +22,11 @@ class ContactDetails extends Component {
 
     if (!this.props.contact) return <div>Loading...</div>
 
-    var editUrl = '/contact/edit/' + this.props.match.params.id
+    var editUrl = '%PUBLIC_URL%/contact/edit/' + this.props.match.params.id
     return (
       <div className="container contact-details">
         <div className="contact-navbar">
-          <Link to="/contacts">Back</Link>
+          <Link to="%PUBLIC_URL%/contacts">Back</Link>
           <Link to={editUrl}>Edit</Link>
         </div>
         <section>
