@@ -20,7 +20,7 @@ const Header = () => {
                         <div> CONTACTS </div>
                     </div>
                 </NavLink>
-                <NavLink exact to={process.env.PUBLIC_URL + "/moves"}>
+                <NavLink exact to={"%PUBLIC_URL%/moves"}>
                     <div>
                         <img src="img/icons/ledger.jpg" />
                         <div> LEDGER </div>
