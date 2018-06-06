@@ -23,12 +23,12 @@ class ContactEdit extends Component {
 
     saveSubmit = e => {
       this.props.saveContact(this.state.contact, ()=> {
-        this.props.history.push("/contacts");
+        this.props.history.push(process.env.PUBLIC_URL + '/contacts');
       })
     }
 
     cancelSubmit = e => {
-      this.props.history.push("/contacts");
+      this.props.history.push(process.env.PUBLIC_URL + '/contacts');
     }
 
   
