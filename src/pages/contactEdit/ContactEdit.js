@@ -52,15 +52,15 @@ class ContactEdit extends Component {
           <div>
             <div className="flex align-center margin-top20">
               <div className="title" > Name: </div> 
-              <Input id="name" onInput={this.updateInput} value={this.state.contact.name} />
+              <Input id="name" onInput={this.updateInput} value={this.state.contact.name} type="text" />
             </div>
             <div className="flex align-center margin-top20">
               <div className="title"> Phone: </div> 
-              <Input id="phone" onInput={this.updateInput} value={this.state.contact.phone} />
+              <Input id="phone" onInput={this.updateInput} value={this.state.contact.phone} type="phone" />
             </div>
             <div className="flex align-center margin-top20">
               <div className="title"> Email: </div> 
-              <Input id="email" onInput={this.updateInput} value={this.state.contact.email} />
+              <Input id="email" onInput={this.updateInput} value={this.state.contact.email} type="email" />
             </div>
             <div className="flex justify-end btn-panel flex">
               <button className="pointer" onClick={this.cancelSubmit}>CANCEL</button>

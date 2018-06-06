@@ -13,6 +13,10 @@ export function usersReducers(state = initState, action) {
             newState.loggedInUser = action.payload;
             return newState;
             break;  
+        case types.ADD_MOVE:
+            newState.loggedInUser.bitCoins -= action.payload[0].amount;
+            return newState;
+            break;
         default:
             return newState;
     }

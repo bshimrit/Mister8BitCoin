@@ -23,10 +23,14 @@ class Transfer extends Component {
         this.setState({onTransfer: true})
         this.props.addMove(this.state.move,() => {
             setTimeout(() => {
-                this.setState({move: MoveService.initMove(),onTransfer:false})
+                this.setState({move: MoveService.initMove(this.props.contact.name),onTransfer:false})
             }
             ,2000)
         })
+    }
+    
+    componentWillReceiveProps(nextProps) {
+        this.setState({move: MoveService.initMove(nextProps.contact.name)});
     }
 
     updateInput = data => {
@@ -46,7 +50,7 @@ class Transfer extends Component {
                 <h1 className="margin-top20">Transfer bitcoins?</h1>
                 <div className="flex flex-column align-end">
                     <div> Amount: 
-                        <Input id="amount" onInput={this.updateInput} value={this.state.move.amount} />
+                        <Input id="amount" onInput={this.updateInput} type="number" />
                     </div>
                     <button  type="submit">TRANSFER</button>
                 </div>

@@ -27,7 +27,7 @@ class Signup extends Component {
             <form onSubmit={this.handleSubmit}>
             <div>Please enter your name:</div>
             <div className="margin-top20">
-                <Input id="user" onInput={this.updateInput} />
+                <Input id="user" onInput={this.updateInput} type="text"/>
                 <input type="submit" />
             </div>
           </form>

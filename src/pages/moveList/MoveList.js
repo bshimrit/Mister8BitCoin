@@ -4,6 +4,8 @@ import { bindActionCreators } from "redux";
 
 import { loadMoves } from '../../store/moves/movesActions';
 
+import './moveList.css';
+
 import MovePreview from '../../components/movePreview/MovePreview.js'
 
 
@@ -17,7 +19,7 @@ class MoveList extends Component {
             <div className="container">
                 <h1>Transfer history</h1>
                 <ul className="move-list flex flex-wrap">{this.props.moves.map(move => {
-                return (<li  key={move.at} ><MovePreview move={move}></MovePreview></li>)
+                return (<li key={move.at} ><MovePreview move={move}></MovePreview></li>)
             })}</ul>
             </div>
             );
