@@ -24,7 +24,7 @@ function addMove(curMove) {
     move.to = curMove.to;
     var user = JSON.parse(StorageService.getStorage('loggedInUser'));
     user.moves.unshift(move)
-    user.bitCoin -= move.amount;
+    user.bitCoins -= move.amount;
     StorageService.setStorage('loggedInUser',JSON.stringify(user))
     resolve(user.moves)
   })

@@ -65,7 +65,7 @@ class ContactEdit extends Component {
             </div>
             <div className="flex justify-end btn-panel flex">
               <button className="pointer" onClick={this.cancelSubmit}>CANCEL</button>
-              <button className="pointer" onClick={this.saveSubmit}>SAVE</button>
+              <button className="pointer" onClick={this.saveSubmit} disabled={!this.state.contact.name}>SAVE</button>
             </div>
           </div>
         </form>

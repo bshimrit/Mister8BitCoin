@@ -52,7 +52,7 @@ class Transfer extends Component {
                     <div>
                         <Input id="amount" onInput={this.updateInput} type="number" placeHolder="Amount"/>
                     </div>
-                    <button  type="submit">TRANSFER</button>
+                    <button  type="submit" disabled={!this.state.move.amount} >TRANSFER</button>
                 </div>
             </form>
           </div>

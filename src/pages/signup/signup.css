@@ -1,0 +1,13 @@
+.signup input[type="text"] {
+    width: 85vw;
+}
+
+.signup h1 {
+    font-size: 1em;
+}
+
+@media (min-width: 750px){
+    .signup h1 {
+        font-size: 1.5em;
+    }
+}

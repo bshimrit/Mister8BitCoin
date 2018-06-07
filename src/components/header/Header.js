@@ -4,7 +4,7 @@ import './header.css'
 
 const Header = () => {
     return (
-        <header className="container App-header">
+        <header className="container flex align-center space-between App-header">
             <img className="logo" src={process.env.PUBLIC_URL + "/img/logo.png"} />
             <h1>Mister 8BitCoin</h1>
             <div className="nav-bar">
