@@ -11,7 +11,6 @@ export function usersReducers(state = initState, action) {
         case types.SIGNUP_USER: 
         case types.LOAD_USER:
             newState.loggedInUser = action.payload;
-            console.log(newState)
             return newState;
             break;  
         case types.ADD_MOVE:
